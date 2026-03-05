@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+
+body {
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
